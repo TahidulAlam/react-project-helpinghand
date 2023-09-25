@@ -1,0 +1,134 @@
+[
+    {
+        "id": "health-1",
+        "category": "Health",
+        "category_bg": "#007BFF",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Support Health Initiatives",
+        "description": "Your donation will help improve healthcare access and facilities in underserved communities.",
+        "picture": "https://i.ibb.co/LZBz69q/Health.png",
+        "price": 150
+    },
+    {
+        "id": "health-2",
+        "category": "Health",
+        "category_bg": "#007BFF",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Medical Supplies Drive",
+        "description": "Donate essential medical supplies to support frontline healthcare workers in their fight against diseases.",
+        "picture": "https://i.ibb.co/LZBz69q/Health.png",
+        "price": 120
+    },
+    {
+        "id": "food-1",
+        "category": "Food",
+        "category_bg": "#FFA500",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Fight Hunger with Food Donations",
+        "description": "Your contribution will provide nutritious meals to those in need, alleviating hunger.",
+        "picture": "https://i.ibb.co/yQRdvwN/Food.png",
+        "price": 110
+    },
+    {
+        "id": "food-2",
+        "category": "Food",
+        "category_bg": "#FFA500",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Support Local Food Banks",
+        "description": "Help stock local food banks to ensure that no one goes to bed hungry in your community.",
+        "picture": "https://i.ibb.co/yQRdvwN/Food.png",
+        "price": 120
+    },
+    {
+        "id": "education-1",
+        "category": "Education",
+        "category_bg": "#FF0000",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Educational Access for All",
+        "description": "Contribute to initiatives that provide quality education to underprivileged children.",
+        "picture": "https://i.ibb.co/NVPSdgn/Education.png",
+        "price": 150
+    },
+    {
+        "id": "education-2",
+        "category": "Education",
+        "category_bg": "#FF0000",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Scholarship Fund",
+        "description": "Support talented students by funding scholarships to pursue their dreams.",
+        "picture": "https://i.ibb.co/NVPSdgn/Education.png",
+        "price": 180
+    },
+    {
+        "id": "clothing-1",
+        "category": "Clothing",
+        "category_bg": "#FF0000",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Warm Clothing Drive",
+        "description": "Donate winter clothing to keep those in need warm during the cold season.",
+        "picture": "https://i.ibb.co/12Cf4Jd/Clothing.png",
+        "price": 120
+    },
+    {
+        "id": "clothing-2",
+        "category": "Clothing",
+        "category_bg": "#FF0000",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Dress for Success",
+        "description": "Help individuals in disadvantaged situations by providing them with professional attire.",
+        "picture": "https://i.ibb.co/12Cf4Jd/Clothing.png",
+        "price": 150
+    },
+    {
+        "id": "health-3",
+        "category": "Health",
+        "category_bg": "#007BFF",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Support Mental Health Services",
+        "description": "Your donation will aid in providing mental health support and counseling.",
+        "picture": "https://i.ibb.co/LZBz69q/Health.png",
+        "price": 130
+    },
+    {
+        "id": "food-3",
+        "category": "Food",
+        "category_bg": "#FFA500",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Emergency Food Relief",
+        "description": "Provide immediate food assistance to families affected by crises and disasters.",
+        "picture": "https://i.ibb.co/yQRdvwN/Food.png",
+        "price": 110
+    },
+    {
+        "id": "education-3",
+        "category": "Education",
+        "category_bg": "#FF0000",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Digital Learning Resources",
+        "description": "Support digital learning initiatives to ensure access to education from anywhere.",
+        "picture": "https://i.ibb.co/NVPSdgn/Education.png",
+        "price": 130
+    },
+    {
+        "id": "clothing-3",
+        "category": "Clothing",
+        "category_bg": "#FF0000",
+        "card_bg": "#FFFFFF",
+        "text_and_button_bg": "#000000",
+        "title": "Children's Clothing Drive",
+        "description": "Donate clothing for children to help them stay comfortable and confident.",
+        "picture": "https://i.ibb.co/12Cf4Jd/Clothing.png",
+        "price": 110
+    }
+]
