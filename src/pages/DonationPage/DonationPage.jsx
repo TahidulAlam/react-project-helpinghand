@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
+import swal from "sweetalert";
 
 const DonationPage = ({ donationCampaign }) => {
   const { id, category, category_bg, description, picture, price, title } =
@@ -12,11 +13,11 @@ const DonationPage = ({ donationCampaign }) => {
     if (!addDonate) {
       donateArray.push(donationCampaign);
       localStorage.setItem("Donate", JSON.stringify(donateArray));
-      alert("Donate Successfully");
+      swal("Good job!", "Donate Successfully!", "success");
     } else {
       donateArray.push(...addDonate, donationCampaign);
       localStorage.setItem("Donate", JSON.stringify(donateArray));
-      alert("Donate Successfully");
+      swal("Good job!", "Donate Successfully!", "success");
     }
   };
   return (
@@ -24,12 +25,13 @@ const DonationPage = ({ donationCampaign }) => {
       <div className="relative">
         <div>
           <img
+            className="lg:h-[650px] w-[100%] h-[280px]"
             src={picture}
             alt=""
-            style={{ width: "100%", height: "650px" }}
+            // style={{ width: "100%", height: "650px" }}
           />
         </div>
-        <div className="absolute bottom-0 left-0 w-[100%] bg-neutral-950 bg-opacity-70 p-10">
+        <div className="absolute bottom-0 left-0 w-[100%] bg-neutral-950 bg-opacity-70 lg:p-10 p-5">
           <button
             onClick={() => handleClick()}
             style={{ backgroundColor: `${category_bg}` }}
@@ -41,7 +43,7 @@ const DonationPage = ({ donationCampaign }) => {
       </div>
       <div>
         <h1 className="text-4xl font-bold  p-3">{title}</h1>
-        <p>{description}</p>
+        <p className="p-3 text-base">{description}</p>
       </div>
     </div>
   );

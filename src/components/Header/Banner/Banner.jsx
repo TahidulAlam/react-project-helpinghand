@@ -9,14 +9,14 @@ const Banner = ({ handleSearch, handleOnChange }) => {
     <div className="">
       <div>
         <img
-          className="w-[100%] h-[650px] relative opacity-5 "
+          className="lg:w-[100%] w-[100%] lg:h-[600px] h-[200px] relative opacity-5 "
           src="../../../../public/banner.png"
           alt=""
         />
       </div>
       <div className="absolute top-0 left-0 w-full z-50">
-        <div className="text-center mt-52 ">
-          <h1 className="text-6xl font-bold">
+        <div className="text-center lg:mt-52 mt-16">
+          <h1 className="lg:text-6xl text-xl font-bold">
             I Grow By Helping People In Need
           </h1>
           <SearchBar

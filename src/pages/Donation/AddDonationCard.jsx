@@ -16,13 +16,17 @@ const AddDonationCard = ({ donateDetails }) => {
     card_bg,
   } = donateDetails || {};
   return (
-    <div className="w-[100%]">
-      <div className="flex">
-        <div className="w-[40%]">
-          <img src={picture} alt="" height="300px" />
+    <div className="lg:w-[100%] w-[95%] mx-auto">
+      <div className="flex lg:flex-row flex-col">
+        <div className="lg:w-[40%] w-[100%]">
+          <img
+            src={picture}
+            alt=""
+            className="lg:h-[200px] lg:w-[auto] w-[100%]"
+          />
         </div>
         <div
-          className="p-3 w-[60%] flex flex-col items-start gap-1"
+          className="p-3 lg:w-[60%] w-[100%] flex flex-col items-start gap-1"
           style={{ backgroundColor: `${card_bg}` }}
         >
           <h1 className="text-lg" style={{ color: `${category_bg}` }}>

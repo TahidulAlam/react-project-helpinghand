@@ -19,7 +19,7 @@ const DonationCard = ({ data }) => {
       <Link to={`/donation_page/${id}`}>
         <div
           style={{ backgroundColor: `${card_bg}` }}
-          className="max-w-sm border h-[350px] rounded-lg"
+          className="max-w-sm m-auto border h-[350px] rounded-lg"
         >
           <a href="#">
             <img className="rounded-t-lg" src={picture} alt="" width="100%" />

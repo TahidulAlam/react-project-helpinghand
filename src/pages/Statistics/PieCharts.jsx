@@ -49,37 +49,29 @@ const PieCharts = (totalDonation) => {
   };
   return (
     <div>
-      <PieChart width={500} height={500} className="font-semibold text-2xl">
-        <Pie
-          dataKey="value"
-          isAnimationActive={false}
-          data={data}
-          cx="50%"
-          cy="50%"
-          outerRadius={180}
-          labelLine={false}
-          label={renderCustomizedLabel}
-        >
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
-          ))}
-        </Pie>
-        <Tooltip />
-      </PieChart>
-      <div className="flex gap-4 justify-center items-center">
-        <div>
-          <h1 className="font-bold text-2xl text-[#FF444A]">
-            Total Donation :{" "}
-            <span className=" bg-[#FF444A] px-10 ml-2 rounded-md"></span>
-          </h1>
-        </div>
-        <div>
-          <h1 className="font-bold text-2xl text-[#00C49F]">
-            Your Donation:{" "}
-            <span className="px-10 ml-2 rounded-md bg-[#00C49F]"></span>
-          </h1>
-        </div>
-      </div>
+      <ResponsiveContainer width={400} height={400}>
+        <PieChart width={500} height={500} className="font-semibold text-2xl">
+          <Pie
+            dataKey="value"
+            isAnimationActive={false}
+            data={data}
+            cx="50%"
+            cy="50%"
+            outerRadius={140}
+            labelLine={false}
+            label={renderCustomizedLabel}
+          >
+            {data.map((entry, index) => (
+              <Cell
+                key={`cell-${index}`}
+                fill={colors[index % colors.length]}
+              />
+            ))}
+          </Pie>
+          <Legend verticalAlign="bottom" height={36} iconSize={20} />
+          <Tooltip />
+        </PieChart>
+      </ResponsiveContainer>
     </div>
   );
 };

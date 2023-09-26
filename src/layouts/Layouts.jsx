@@ -6,7 +6,7 @@ import Navber from "../components/Header/Navber/Navber";
 // Navber
 const Layouts = () => {
   return (
-    <div className="max-w-[1440px]  mx-auto">
+    <div className="lg:max-w-[1440px]  mx-auto">
       <div className="z-50">
         <Navber></Navber>
       </div>

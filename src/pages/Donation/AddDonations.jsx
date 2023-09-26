@@ -24,7 +24,7 @@ const Donations = () => {
             {nodata}
           </p>
         ) : (
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-2">
             {isShowMore
               ? addDonation?.map((donateDetails) => (
                   <AddDonationCard
