@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ handleSearch, handleOnChange }) => {
   return (
     <div>
-      <form>
+      <form method="post" onSubmit={handleSearch}>
         <div className="flex">
           <div className="relative w-[40%] mx-auto mt-10">
             <input
@@ -12,6 +13,7 @@ const SearchBar = () => {
               className="block p-4 w-full z-20 text-sm text-gray-100 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-100 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:border-blue-500 rounded-l-lg"
               placeholder="Search here..."
               required=""
+              onChange={handleOnChange}
             />
             <button
               type="submit"

@@ -32,7 +32,8 @@ const DonationPage = ({ donationCampaign }) => {
         <div className="absolute bottom-0 left-0 w-[100%] bg-neutral-950 bg-opacity-70 p-10">
           <button
             onClick={() => handleClick()}
-            className="bg-red-600 px-5 py-2 rounded-lg "
+            style={{ backgroundColor: `${category_bg}` }}
+            className="px-5 py-2 rounded-sm text-white font-semibold"
           >
             Donation ${price}
           </button>

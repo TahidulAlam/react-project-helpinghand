@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Navber from "../Navber/Navber";
+// import Navber from "../Navber/Navber";
 import SearchBar from "../SearchBar/SearchBar";
 
-const Banner = () => {
+const Banner = ({ handleSearch, handleOnChange }) => {
   return (
     <div className="">
       <div>
@@ -18,7 +19,10 @@ const Banner = () => {
           <h1 className="text-6xl font-bold">
             I Grow By Helping People In Need
           </h1>
-          <SearchBar></SearchBar>
+          <SearchBar
+            handleSearch={handleSearch}
+            handleOnChange={handleOnChange}
+          ></SearchBar>
         </div>
       </div>
     </div>
