@@ -14,18 +14,9 @@ const DonationPage = ({ donationCampaign }) => {
       localStorage.setItem("Donate", JSON.stringify(donateArray));
       alert("Donate Successfully");
     } else {
-      const isExist = addDonate?.find((dd) => dd.id === id);
-      console.log(isExist);
-      //   donateArray.push(...addDonate, donationCampaign);
-      //   localStorage.setItem("Donate", JSON.stringify(donateArray));
-      // alert("Donate Successfully");
-      if (isExist) {
-        return alert("already Donate");
-      } else {
-        donateArray.push(...addDonate, donationCampaign);
-        localStorage.setItem("Donate", JSON.stringify(donateArray));
-        alert("Donate Successfully");
-      }
+      donateArray.push(...addDonate, donationCampaign);
+      localStorage.setItem("Donate", JSON.stringify(donateArray));
+      alert("Donate Successfully");
     }
   };
   return (

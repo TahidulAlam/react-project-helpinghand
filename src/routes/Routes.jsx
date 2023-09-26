@@ -2,7 +2,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layouts from "../layouts/Layouts";
-import Donations from "../pages/Donation/Donations";
+import Donations from "../pages/Donation/AddDonations";
 import Statistics from "../pages/Statistics/Statistics";
 import Home from "../pages/home/Home";
 import MainHome from "../pages/Home/MainHome";
@@ -13,7 +13,7 @@ const myRoute = createBrowserRouter([
   {
     path: "/",
     element: <Layouts></Layouts>,
-    errorElement: <ErrorPage></ErrorPage>,
+    // errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -27,6 +27,7 @@ const myRoute = createBrowserRouter([
       },
       {
         path: "/donations",
+        // element: <div>Hello Donations</div>,
         element: <Donations></Donations>,
       },
       {

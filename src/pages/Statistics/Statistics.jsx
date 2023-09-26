@@ -1,10 +1,24 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useState } from "react";
+import PieCharts from "./PieCharts";
 
 const Statistics = () => {
+  const [addDonationData, setAddDonationData] = useState([]);
+  useEffect(() => {
+    const addDonate = JSON.parse(localStorage.getItem("Donate"));
+    if (addDonate) {
+      setAddDonationData(addDonate);
+    }
+  }, []);
+
+  const donationPers = addDonationData.length;
+  const totalDonation = donationPers * 8.33;
+  console.log(totalDonation);
   return (
     <div>
-      <h1>Hello Statistics</h1>
+      <div className="flex justify-center items-center">
+        <PieCharts totalDonation={totalDonation}></PieCharts>
+      </div>
     </div>
   );
 };
