@@ -5,19 +5,16 @@ import SearchBar from "../SearchBar/SearchBar";
 
 const Banner = () => {
   return (
-    <div className="relative">
+    <div className="">
       <div>
         <img
-          className="w-[100%] h-[600px] opacity-5"
+          className="w-[100%] h-[650px] relative opacity-5 "
           src="../../../../public/banner.png"
           alt=""
         />
       </div>
-      <div className="absolute top-0 left-0 w-full">
-        <div className="z-50">
-          <Navber></Navber>
-        </div>
-        <div className="text-center mt-40">
+      <div className="absolute top-0 left-0 w-full z-50">
+        <div className="text-center mt-52 ">
           <h1 className="text-6xl font-bold">
             I Grow By Helping People In Need
           </h1>

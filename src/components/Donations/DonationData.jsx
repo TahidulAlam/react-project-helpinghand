@@ -4,13 +4,16 @@ import React from "react";
 import DonationCard from "./DonationCard";
 
 const DonationData = ({ donationData }) => {
-  console.log(donationData);
+  // console.log(donationData);
   return (
     <div>
       <h1>Donation Data</h1>
-      {donationData?.map((dd) => (
-        <DonationCard key={dd.id}></DonationCard>
-      ))}
+      {/* {donationData.map((data) => console.log(data))} */}
+      <div className="grid grid-cols-4 gap-4">
+        {donationData.map((data) => (
+          <DonationCard key={data.id} data={data}></DonationCard>
+        ))}
+      </div>
     </div>
   );
 };
